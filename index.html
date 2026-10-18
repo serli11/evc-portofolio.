@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portofolio pribadi dan proyek digital.">
+  <title>EVC Portfolio | Portofolio Pribadi</title>
+  <style>
+    :root{--bg:#0b1020;--panel:#121a2e;--text:#f5f7ff;--muted:#aab4cc;--accent:#7c8cff;--accent2:#54e0c7;--line:rgba(255,255,255,.12)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:radial-gradient(circle at 80% 0%,#202957 0,transparent 35%),var(--bg);color:var(--text);line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1080px,92%);margin:auto}.nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0;border-bottom:1px solid var(--line)}.logo{font-weight:800;letter-spacing:.5px;font-size:1.15rem}.logo span{color:var(--accent2)}.navlinks{display:flex;gap:24px;color:var(--muted);font-size:.94rem}.navlinks a:hover{color:white}
+    .hero{padding:92px 0 78px;display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center}.eyebrow{display:inline-flex;gap:9px;align-items:center;color:var(--accent2);font-weight:700;font-size:.86rem;letter-spacing:1.5px;text-transform:uppercase}.dot{height:8px;width:8px;border-radius:50%;background:var(--accent2);box-shadow:0 0 14px var(--accent2)}h1{font-size:clamp(2.7rem,6vw,4.8rem);line-height:1.05;letter-spacing:-2px;margin:18px 0}.gradient{background:linear-gradient(90deg,#a7b1ff,#54e0c7);-webkit-background-clip:text;background-clip:text;color:transparent}.intro{max-width:620px;color:var(--muted);font-size:1.08rem}.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;padding:12px 19px;border-radius:12px;background:var(--accent);font-weight:700;color:white;border:1px solid transparent}.btn.secondary{background:transparent;border-color:var(--line)}.btn:hover{transform:translateY(-2px)}.hero-card{background:linear-gradient(145deg,rgba(124,140,255,.19),rgba(84,224,199,.07));border:1px solid var(--line);border-radius:28px;padding:28px;min-height:310px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 25px 80px #0003}.monogram{height:94px;width:94px;border-radius:25px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:grid;place-items:center;font-size:2rem;font-weight:900;color:#0b1020}.card-label{color:var(--muted);font-size:.9rem}.card-title{font-size:1.6rem;font-weight:800;margin-top:3px}.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.chip{font-size:.8rem;padding:6px 10px;border-radius:99px;background:#ffffff0c;border:1px solid var(--line);color:#dbe2f7}
+    section{padding:48px 0}.section-head{margin-bottom:25px}.kicker{color:var(--accent2);font-weight:700;text-transform:uppercase;letter-spacing:1.5px;font-size:.78rem}.section-head h2{font-size:2rem;margin:5px 0}.section-head p{color:var(--muted);margin:0}.about{display:grid;grid-template-columns:1fr 1fr;gap:24px}.panel{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:25px}.panel p{color:var(--muted);margin-bottom:0}.skills{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.skill{border:1px solid var(--line);padding:8px 12px;border-radius:10px;background:#ffffff06}
+    .projects{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.project{background:var(--panel);border:1px solid var(--line);border-radius:20px;overflow:hidden;transition:.2s}.project:hover{transform:translateY(-5px);border-color:#7c8cff88}.project-art{height:145px;padding:20px;display:flex;align-items:end;background:linear-gradient(135deg,#333f84,#17233c)}.project:nth-child(2) .project-art{background:linear-gradient(135deg,#176c70,#182c48)}.project:nth-child(3) .project-art{background:linear-gradient(135deg,#7951a8,#25254b)}.project-art span{font-size:2.1rem}.project-body{padding:20px}.project-body h3{margin:0 0 8px}.project-body p{color:var(--muted);font-size:.94rem;margin:0}.tagline{color:var(--accent2);font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:1px}
+    .contact{display:flex;align-items:center;justify-content:space-between;gap:25px;background:linear-gradient(110deg,#1a2447,#112a34);border:1px solid var(--line);border-radius:24px;padding:32px}.contact h2{margin:5px 0;font-size:1.8rem}.contact p{color:var(--muted);margin:0}.footer{border-top:1px solid var(--line);padding:25px 0;margin-top:55px;color:var(--muted);font-size:.88rem;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    @media(max-width:760px){.hero{grid-template-columns:1fr;padding:65px 0 45px}.hero-card{min-height:250px}.about{grid-template-columns:1fr}.projects{grid-template-columns:1fr}.navlinks{gap:12px;font-size:.82rem}.contact{align-items:flex-start;flex-direction:column}h1{letter-spacing:-1px}}
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <nav class="nav">
+      <a class="logo" href="#home">EVC<span>.</span></a>
+      <div class="navlinks"><a href="#about">Tentang</a><a href="#projects">Proyek</a><a href="#contact">Kontak</a></div>
+    </nav>
+  </header>
+  <main class="wrap">
+    <section class="hero" id="home">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> Portofolio Pribadi</div>
+        <h1>Halo, saya<br><span class="gradient">Nama Kamu.</span></h1>
+        <p class="intro">Saya tertarik pada pengembangan web dan teknologi digital. Saya senang mempelajari hal baru, membangun solusi yang bermanfaat, dan mengubah ide menjadi karya.</p>
+        <div class="actions"><a class="btn" href="#projects">Lihat Proyek ↓</a><a class="btn secondary" href="#contact">Hubungi Saya</a></div>
+      </div>
+      <aside class="hero-card">
+        <div class="monogram">NK</div>
+        <div><div class="card-label">Selamat datang di website saya</div><div class="card-title">Kreatif. Belajar. Berkarya.</div><div class="chips"><span class="chip">Web Development</span><span class="chip">UI Design</span><span class="chip">Problem Solving</span></div></div>
+      </aside>
+    </section>
+    <section id="about">
+      <div class="section-head"><div class="kicker">Kenali saya</div><h2>Tentang Saya</h2><p>Sedikit cerita tentang diri dan kemampuan saya.</p></div>
+      <div class="about">
+        <div class="panel"><h3>Siapa saya?</h3><p>Saya adalah seseorang yang memiliki minat di bidang teknologi informasi, khususnya pembuatan website. Portofolio ini menjadi tempat untuk memperkenalkan diri, menampilkan karya, dan mendokumentasikan proses belajar saya.</p></div>
+        <div class="panel"><h3>Keahlian</h3><p>Teknologi dan kemampuan yang sedang saya pelajari dan kembangkan.</p><div class="skills"><span class="skill">HTML</span><span class="skill">CSS</span><span class="skill">JavaScript</span><span class="skill">PHP / Laravel</span><span class="skill">GitHub</span></div></div>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="section-head"><div class="kicker">Karya pilihan</div><h2>Proyek Saya</h2><p>Ganti contoh proyek berikut dengan proyek yang pernah kamu kerjakan.</p></div>
+      <div class="projects">
+        <article class="project"><div class="project-art"><span>✦</span></div><div class="project-body"><div class="tagline">Proyek 01</div><h3>Website Portofolio</h3><p>Website pribadi untuk memperkenalkan profil, kemampuan, dan hasil karya dalam satu halaman.</p></div></article>
+        <article class="project"><div class="project-art"><span>⌘</span></div><div class="project-body"><div class="tagline">Proyek 02</div><h3>Aplikasi Web</h3><p>Aplikasi web sederhana untuk membantu pengelolaan informasi dengan tampilan yang mudah digunakan.</p></div></article>
+        <article class="project"><div class="project-art"><span>◈</span></div><div class="project-body"><div class="tagline">Proyek 03</div><h3>Desain Antarmuka</h3><p>Rancangan antarmuka yang berfokus pada pengalaman pengguna dan penyajian informasi yang jelas.</p></div></article>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="contact"><div><div class="kicker">Mari terhubung</div><h2>Ada ide atau kolaborasi?</h2><p>Silakan hubungi saya melalui email.</p></div><a class="btn" href="mailto:emailkamu@example.com">Kirim Email ↗</a></div>
+    </section>
+  </main>
+  <footer class="wrap footer"><span>© <span id="year"></span> EVC Portfolio</span><span>Dibuat dengan semangat belajar dan berkarya.</span></footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
